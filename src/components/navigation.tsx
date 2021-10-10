@@ -28,12 +28,12 @@ export function Navigation() {
             </li>
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
+                Work Experience
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#testimonials">
-                Testimonials
+                Projects
               </a>
             </li>
             <li>
