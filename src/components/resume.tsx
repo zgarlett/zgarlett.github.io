@@ -4,7 +4,7 @@ const data = {"education": [
       "school": "Oklahoma State University",
       "degree": "Bachelors in Computer Science",
       "graduated": "December 2020",
-      "description": "Under the recommendation and Guidance of the Head Coach of the UVIC soccer team, I transferred to the University of Victoria. Here I took my Bachelors of Computer Science with a Software Engineering Specialty and achieved a much more thorough education in the underlying theory, concepts, and science behind more complex programming. It was here that I discovered my passion for scalable application programming (web and mobile), the security behind computer and application systems, and found that I have a knack for understanding complex algorithms."
+      "description": "I transferred to OSU to start my degree in Computer Science. "
     },
     {
       "school": "University of Oklahoma",
