@@ -9,9 +9,13 @@ const experiences = [
     summary:
       'Solo practice working with early-stage teams on interface design, design systems, and frontend implementation. Recent clients span aerospace, climate, and developer tools.',
     bullets: [
-      'Led the design of three commercial products from zero-to-one launch',
-      'Built and maintain a shared component library used by 40+ engineers',
-      'Run quarterly design reviews and craft critiques for two client teams',
+      'Wrote clean, maintainable, and reusable code in TypeScript and React for front-end and serverless back-end components, following software engineering best practices.',
+      'Collaborated with product managers, engineers, and operations throughout the SDLC to define requirements and prioritize deliverables.',
+      'Translated business requirements into technical solutions, designing REST API contracts and optimizing MySQL schemas for integrations between systems.',
+      'Debugged, troubleshot, and resolved production issues, performing root-cause analysis and supporting incident response and customer-facing technical support.',
+      'Participated in code reviews and testing processes using Git and unit/integration tests; worked closely with QA to improve test coverage and release quality.',
+      'Documented software architecture and design decisions, producing API documentation and diagrams for cloud-based/serverless deployments on AWS.',
+      'Collaborated on full-stack product development, ensuring seamless integration of front-end and back-end components.',
     ],
   },
   {
@@ -22,9 +26,9 @@ const experiences = [
     summary:
       'Owned the design of the data exploration product (~200k MAU). Partnered closely with engineering on a year-long performance overhaul that cut interaction latency by 40%.',
     bullets: [
-      'Designed and shipped the v3 query builder, the company\'s most-used feature',
-      'Established the design system and documentation site',
-      'Hired and mentored two junior designers',
+      'Built integrations between applications and data sources (databases, REST APIs) to support feature development and data flows.',
+      'Created AWS Lambda functions using the Serverless Framework (infrastructure-as-code) to implement serverless business logic and event-driven workflows.',
+      'Gained practical software development experience and adapted to professional SDLC processes and team workflows.',
     ],
   },
   {
@@ -37,6 +41,7 @@ const experiences = [
     bullets: [
       'Developed mobile applications that interact with equipment via Bluetooth to streamline data collection',
       'Improved user experience for field engineers through intuitive interface design',
+      'Collaborated with cross-functional teams to gather requirements and implement features for a bluetooth-enabled pressure transducer',
     ],
   },
 ];
