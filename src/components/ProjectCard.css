@@ -1,0 +1,189 @@
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-panel);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  transition:
+    transform 0.5s var(--ease-out),
+    border-color 0.4s var(--ease-out),
+    box-shadow 0.5s var(--ease-out);
+  cursor: pointer;
+  isolation: isolate;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 var(--card-accent);
+  transition: box-shadow 0.5s var(--ease-out);
+  z-index: 2;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: var(--card-accent);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.7);
+  outline: none;
+}
+
+.project-card:hover::before,
+.project-card:focus-visible::before {
+  box-shadow: 0 0 0 1px var(--card-accent), 0 0 30px -5px var(--card-accent);
+}
+
+.project-card:active { transform: translateY(-2px); }
+
+/* Media */
+.card-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--bg-elevated);
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease-out), filter 0.5s var(--ease-out);
+  filter: saturate(0.85) contrast(1.05);
+}
+
+.project-card:hover .card-media img {
+  transform: scale(1.06);
+  filter: saturate(1.1) contrast(1.05);
+}
+
+.card-media-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 50%, rgba(10, 10, 15, 0.4) 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 2px,
+      rgba(0, 0, 0, 0.06) 2px,
+      rgba(0, 0, 0, 0.06) 3px
+    );
+  pointer-events: none;
+}
+
+.card-date {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: rgba(10, 10, 15, 0.7);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--rule-strong);
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+/* Body */
+.card-body {
+  padding: 22px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-transform: lowercase;
+  color: var(--ink);
+}
+
+.card-arrow {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--rule-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-accent);
+  transition: transform 0.4s var(--ease-snap), background 0.3s var(--ease-out);
+}
+
+.project-card:hover .card-arrow {
+  transform: rotate(-45deg);
+  background: var(--card-accent);
+  color: var(--bg-deep);
+  border-color: var(--card-accent);
+}
+
+.card-subtitle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--card-accent);
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-dim);
+  margin-top: 4px;
+}
+
+.card-footer {
+  margin-top: auto;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.card-cta {
+  color: var(--ink);
+  position: relative;
+}
+
+.card-cta::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: var(--card-accent);
+  transform: scaleX(0.3);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-snap);
+}
+
+.project-card:hover .card-cta::after { transform: scaleX(1); }
+
+.card-id { color: var(--ink-faint); }
