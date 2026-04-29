@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 import './Header.css';
 
 const links = [
-  { to: '/', label: 'Index', code: '00' },
+  { to: '/', label: 'Home', code: '00' },
   { to: '/resume', label: 'Resume', code: '01' },
   { to: '/experience', label: 'Experience', code: '02' },
   { to: '/projects', label: 'Projects', code: '03' },

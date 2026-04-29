@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="page-enter home">
       <div className="shell home-shell">
-        <span className="eyebrow">Index · 0001</span>
+        <span className="eyebrow">Index · 0000</span>
 
         <h1 className="home-headline">
           Software<br />

@@ -7,7 +7,7 @@ export default function Projects() {
     <div className="page-enter projects-page">
       <div className="shell">
         <div className="page-header">
-          <span className="eyebrow">File · 0004 / Projects</span>
+          <span className="eyebrow">File · 0003 / Projects</span>
           <h1 className="headline">selected work.</h1>
           <p className="page-lede">
             A small archive of recent projects. Tap any card for the full case study —

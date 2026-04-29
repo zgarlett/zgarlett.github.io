@@ -46,7 +46,7 @@ export default function Experience() {
     <div className="page-enter experience">
       <div className="shell">
         <div className="page-header">
-          <span className="eyebrow">File · 0003 / Experience</span>
+          <span className="eyebrow">File · 0002 / Experience</span>
           <h1 className="headline">work history.</h1>
           <p className="page-lede">
             Roles I've held, in reverse chronological order.

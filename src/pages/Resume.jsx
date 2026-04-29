@@ -1,34 +1,33 @@
 import './Resume.css';
 
 const skills = {
-    Design: ['Interface Design', 'Design Systems', 'Prototyping', 'Motion', 'Type Design'],
-    Engineering: ['React / Next.js', 'TypeScript', 'WebGL / Three.js', 'Node', 'Rust (learning)'],
-    Practice: ['User Research', 'Workshop Facilitation', 'Technical Writing', 'Mentorship'],
+    Languages: ['TypeScript', 'JavaScript', 'C#', 'VB.NET', 'C++', 'Swift', 'Kotlin'],
+    Frontend: ['React', 'React Native', 'CSS'],
+    'Backend & Cloud': ['MySQL', 'MS SQL Server', 'Oracle', 'AWS', 'AWS Lambda', 'REST APIs', 'Azure DevOps', 'Git'],
 };
 
 const education = [
     {
-        school: 'University of Kansas',
-        degree: 'B.F.A., Visual Communication',
-        year: '2014 — 2018',
-        note: 'Minor in Computer Science',
+        school: 'Oklahoma State University',
+        degree: 'B.S., Computer Science',
+        year: 'Dec 2020',
+        note: 'GPA: 3.5',
     },
     {
-        school: 'Recurse Center',
-        degree: 'Self-directed programming retreat',
-        year: 'Spring 2020',
-        note: 'Focus: graphics programming, type rendering',
+        school: 'University of Oklahoma',
+        degree: 'B.S., Geology',
+        year: 'Dec 2015',
+        note: '',
     },
 ];
 
 const speaking = [
     {
-        event: 'Config 2024',
-        talk: '"Designing for the next 10,000 days"',
-        location: 'San Francisco',
+        event: 'Hour of Code 2024',
+        talk: '"Intro to Development: Building a Web Game, 4th Grade"',
+        location: 'Isely Traditional Magnet Elementary School',
     },
-    { event: 'Front Conference', talk: '"WebGL without the headache"', location: 'Zurich' },
-    { event: 'Layers 2023', talk: 'Workshop: Generative type systems', location: 'Brooklyn' },
+    { event: 'Hour of Code 2025', talk: '"Intro to Development: Building a Web Game, 3rd Grade"', location: 'Isely Traditional Magnet Elementary School' }
 ];
 
 export default function Resume() {
@@ -36,11 +35,13 @@ export default function Resume() {
         <div className="page-enter resume">
             <div className="shell">
                 <div className="page-header">
-                    <span className="eyebrow">File · 0002 / Resume</span>
+                    <span className="eyebrow">File · 0001 / Resume</span>
                     <h1 className="headline">resume.</h1>
                     <p className="page-lede">
-                        A concise account of training, output, and public-facing work. For the full
-                        case studies, see <a href="/projects">/projects</a>.
+                        Full-stack software engineer with 5+ years building cloud-based applications
+                        and integrations. Experienced translating product requirements into
+                        maintainable REST APIs and database schemas. For project case studies,
+                        see <a href="/projects">/projects</a>.
                     </p>
                     <a href="#" className="resume-download" download>
                         <svg viewBox="0 0 24 24" width="14" height="14">
@@ -53,7 +54,7 @@ export default function Resume() {
                             />
                         </svg>
                         <a
-                            href="https://raw.githubusercontent.com/yourusername/my-site/main/favicon.zip"
+                            href="https://raw.githubusercontent.com/zgarlett/zgarlett.github.io/main/Garlett-Resume.pdf"
                             download
                         >
                             Download PDF
@@ -99,7 +100,7 @@ export default function Resume() {
 
                 <section className="resume-section">
                     <h2 className="resume-section-title">
-                        <span className="section-num">03</span> Speaking & Writing
+                        <span className="section-num">03</span> Extra Curricular
                     </h2>
                     <div className="speaking-list">
                         {speaking.map((s) => (
