@@ -3,7 +3,7 @@
    ============================================ */
 
 :root {
-  /* Color tokens */
+  /* Color tokens — dark mode defaults */
   --bg-deep: #0a0a0f;
   --bg-panel: #14141c;
   --bg-elevated: #1c1c28;
@@ -19,6 +19,10 @@
   --rule: rgba(244, 240, 232, 0.08);
   --rule-strong: rgba(244, 240, 232, 0.18);
 
+  /* Component-specific */
+  --header-bg: rgba(20, 20, 28, 0.72);
+  --scanline-color: rgba(255, 255, 255, 0.012);
+
   /* Typography */
   --font-display: 'Major Mono Display', monospace;
   --font-sans: 'Syne', sans-serif;
@@ -29,10 +33,28 @@
   --ease-snap: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
+/* Light mode overrides — all accents stay the same */
+[data-theme="light"] {
+  --bg-deep: #f5f1e9;
+  --bg-panel: #ece8e0;
+  --bg-elevated: #e2ddd5;
+  --ink: #0a0a0f;
+  --ink-dim: #5a5a6a;
+  --ink-faint: #aaaabc;
+  --rule: rgba(10, 10, 15, 0.08);
+  --rule-strong: rgba(10, 10, 15, 0.18);
+  --header-bg: rgba(236, 232, 224, 0.85);
+  --scanline-color: rgba(0, 0, 0, 0.012);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  transition: background-color 0.35s var(--ease-out), color 0.35s var(--ease-out);
 }
 
 html, body {
@@ -67,8 +89,8 @@ body::after {
     0deg,
     transparent 0,
     transparent 3px,
-    rgba(255, 255, 255, 0.012) 3px,
-    rgba(255, 255, 255, 0.012) 4px
+    var(--scanline-color) 3px,
+    var(--scanline-color) 4px
   );
 }
 

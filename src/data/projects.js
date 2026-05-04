@@ -44,15 +44,14 @@ export const projects = [
     subtitle: '3D printed turbine · 2024',
     date: 'Winter 2024',
     description:
-      'Daily generative posters tied to a custom radio station. Each day produces a unique algorithmic poster derived from the day\'s playlist.',
+      'A 3D-printed vertical-axis wind turbine designed for low-wind environments. Generates enough power to charge a phone in a day of light breeze.',
     image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80',
     accent: '#d4ff3a',
     role: 'Designer, audio programmer',
     timeline: 'Ongoing',
     stack: ['p5.js', 'Web Audio API', 'Cloudflare Workers'],
     body: [
-      'Paper Radio is a love letter to FM radio aesthetics. Every poster is an SVG generated from spectral analysis of the day\'s 20-track playlist, which I curate manually each morning.',
-      'The hardest part wasn\'t the code — it was the constraint of making sure no two days look alike while keeping a consistent visual language. I ended up encoding the constraint as a "novelty score" that compares each new poster to the last 30 days.',
+      'Windcharger started as a weekend project to explore how software could help me understand the physics of wind energy. I designed and 3D-printed a small vertical-axis turbine, then built a web-based simulator to model its performance under different conditions.',
     ],
   },
   {
